@@ -1,2 +1,2 @@
-# Back-End-Django
-Back-End Repository for COSC625 web app project. Django REST Framework.
+# Django
+Full-stack web-app repository for COSC625 web app project using Django Framework.
