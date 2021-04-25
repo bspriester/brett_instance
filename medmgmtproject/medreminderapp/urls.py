@@ -7,5 +7,5 @@ urlpatterns = [
     path('medications', medications_handler, name='Medications'),
     path('reminders', reminders_handler, name='Reminders'),
     path('history', history_handler, name='History'),
-    path('login', login_handler, name='Login')
+    path('accounts/login', login_handler, name='Login'),
 ]

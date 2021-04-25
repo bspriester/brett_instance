@@ -1,0 +1,15 @@
+<!-- templates/registration/signup.html -->
+<!-- Created and added by Brett. Commented out the extends base.html part since base.html is still breaking pages. -->
+
+<!--{% extends 'base.html' %}-->
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+  <h2>Sign up</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign Up</button>
+  </form>
+{% endblock %}

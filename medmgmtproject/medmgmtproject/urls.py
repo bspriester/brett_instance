@@ -15,8 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic.base import TemplateView # Changed by Brett.
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('medreminderapp.urls'))
+    path('', include('medreminderapp.urls')),
+    path('accounts/', include('accounts.urls')), # Added by Brett for signup feature.
+    path('accounts/', include('django.contrib.auth.urls')),
+    #Didn't include the following from the tutorial I'm using since I don't want to mess up the current home page setup: 
+    #path('', TemplateView.as_view(template_name='home.html'), name='home'),
 ]
