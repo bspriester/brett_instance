@@ -27,3 +27,6 @@ def history_handler(request):
 
 def login_handler(request):
     return render(request, 'login.html')
+
+def signup_handler(request):
+    return render(request, 'signup.html')
